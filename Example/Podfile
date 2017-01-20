@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ProtobufDemo_Example' do
+  pod 'ProtobufDemo', :path => '../'
+
+  target 'ProtobufDemo_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
