@@ -1,0 +1,19 @@
+PODS:
+  - Protobuf (3.1.0)
+  - ProtobufDemo (0.1.0):
+    - Protobuf
+
+DEPENDENCIES:
+  - ProtobufDemo (from `../`)
+
+EXTERNAL SOURCES:
+  ProtobufDemo:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Protobuf: 265e9977d04a83eba9cefb0bed3ad07e41033b4a
+  ProtobufDemo: cbce51c1f60f2cdf1da84f9fc57ebd3e1e95ab5e
+
+PODFILE CHECKSUM: c48f1561c65c0bc44c646c8533ddc6de80fa3f81
+
+COCOAPODS: 1.2.0.beta.1

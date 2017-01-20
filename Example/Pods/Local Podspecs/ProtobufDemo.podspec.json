@@ -1,0 +1,28 @@
+{
+  "name": "ProtobufDemo",
+  "version": "0.1.0",
+  "summary": "A short description of ProtobufDemo.",
+  "description": "Add long description of the pod here.",
+  "homepage": "https://github.com/<WJustin>/ProtobufDemo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Justin.Wang": "rongchao.wang@ele.me"
+  },
+  "source": {
+    "git": "https://github.com/<WJustin>/ProtobufDemo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "ProtobufDemo/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "Protobuf": [
+
+    ]
+  }
+}
