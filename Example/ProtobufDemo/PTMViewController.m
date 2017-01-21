@@ -7,6 +7,7 @@
 //
 
 #import "PTMViewController.h"
+#import <ProtobufDemo/SignMessage.pbobjc.h>
 
 @interface PTMViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    PTMUserSignUpRequest *request = [[PTMUserSignUpRequest alloc] init];
+    request.osVersion = @"mmm";
+    NSLog(@"%@",request);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

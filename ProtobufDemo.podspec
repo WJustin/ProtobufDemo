@@ -24,4 +24,7 @@ Pod::Spec.new do |s|
   s.source_files = 'ProtobufDemo/Classes/**/*'
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.dependency 'Protobuf'
+  s.dependency 'ProtocolBuffers'
+  s.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1' }
+
 end

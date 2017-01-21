@@ -2,6 +2,8 @@ PODS:
   - Protobuf (3.1.0)
   - ProtobufDemo (0.1.0):
     - Protobuf
+    - ProtocolBuffers
+  - ProtocolBuffers (1.9.11)
 
 DEPENDENCIES:
   - ProtobufDemo (from `../`)
@@ -12,7 +14,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Protobuf: 265e9977d04a83eba9cefb0bed3ad07e41033b4a
-  ProtobufDemo: cbce51c1f60f2cdf1da84f9fc57ebd3e1e95ab5e
+  ProtobufDemo: f12835c4d0ff5af1cc508cfcd4e6389c292523e2
+  ProtocolBuffers: d509225eb2ea43d9582a59e94348fcf86e2abd65
 
 PODFILE CHECKSUM: c48f1561c65c0bc44c646c8533ddc6de80fa3f81
 
