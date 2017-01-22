@@ -16,19 +16,49 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "7.1",
+    "osx": "10.9"
   },
-  "source_files": "ProtobufDemo/Classes/**/*",
-  "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
-    "Protobuf": [
-
-    ],
-    "ProtocolBuffers": [
-
+    "!ProtoCompiler-gRPCPlugin": [
+      "~> 1.0"
     ]
   },
   "pod_target_xcconfig": {
-    "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1"
-  }
+    "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
+  "subspecs": [
+    {
+      "name": "Messages",
+      "source_files": [
+        "../ProtobufDemo/Classes/Message/*.pbobjc.{h,m}",
+        "../ProtobufDemo/Classes/Message/**/*.pbobjc.{h,m}"
+      ],
+      "header_mappings_dir": "../ProtobufDemo/Classes/Message",
+      "requires_arc": false,
+      "dependencies": {
+        "Protobuf": [
+
+        ]
+      }
+    },
+    {
+      "name": "Services",
+      "source_files": [
+        "../ProtobufDemo/Classes/Service/*.pbrpc.{h,m}",
+        "../ProtobufDemo/Classes/Service/**/*.pbrpc.{h,m}"
+      ],
+      "header_mappings_dir": "../ProtobufDemo/Classes/Service",
+      "requires_arc": true,
+      "dependencies": {
+        "gRPC-ProtoRPC": [
+
+        ],
+        "ProtobufDemo/Messages": [
+
+        ]
+      }
+    }
+  ]
 }

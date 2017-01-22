@@ -89,14 +89,20 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/BoringSSL/openssl.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Protobuf/Protobuf.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ProtobufDemo/ProtobufDemo.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ProtocolBuffers/ProtocolBuffers.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/gRPC/GRPCClient.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/gRPC-Core/grpc.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/gRPC-ProtoRPC/ProtoRPC.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/gRPC-RxLibrary/RxLibrary.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/BoringSSL/openssl.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Protobuf/Protobuf.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ProtobufDemo/ProtobufDemo.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ProtocolBuffers/ProtocolBuffers.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/gRPC/GRPCClient.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/gRPC-Core/grpc.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/gRPC-ProtoRPC/ProtoRPC.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/gRPC-RxLibrary/RxLibrary.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

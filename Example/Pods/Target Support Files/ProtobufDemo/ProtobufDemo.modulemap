@@ -1,6 +1,0 @@
-framework module ProtobufDemo {
-  umbrella header "ProtobufDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}
