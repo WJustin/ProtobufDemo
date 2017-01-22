@@ -21,8 +21,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/<WJustin>/ProtobufDemo.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = "7.1"
-  s.osx.deployment_target = "10.9"
-  s.dependency "!ProtoCompiler-gRPCPlugin", "~> 1.0"
   # Base directory where the .proto files are.
   src = "../../protos"
 

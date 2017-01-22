@@ -1,6 +1,7 @@
 use_frameworks!
 
 target 'ProtobufDemo_Example' do
+  pod '!ProtoCompiler-gRPCPlugin', '~> 1.0'
   pod 'ProtobufDemo', :path => '../'
 
   target 'ProtobufDemo_Tests' do

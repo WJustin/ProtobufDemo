@@ -16,13 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "7.1",
-    "osx": "10.9"
-  },
-  "dependencies": {
-    "!ProtoCompiler-gRPCPlugin": [
-      "~> 1.0"
-    ]
+    "ios": "7.1"
   },
   "prepare_command": "Example/Pods/!ProtoCompiler/protoc      --plugin=protoc-gen-grpc=Example/Pods/!ProtoCompiler-gRPCPlugin/grpc_objective_c_plugin      --objc_out=ProtobufDemo/Classes/Message      --grpc_out=ProtobufDemo/Classes/Service      --proto_path=../ProtoFile       ../ProtoFile/*.proto",
   "pod_target_xcconfig": {
